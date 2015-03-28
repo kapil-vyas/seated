@@ -117,4 +117,44 @@ body {
           border: 3px solid rgba(216, 216, 216, 0.75);
           color: rgba(24, 3, 181, 0.75); }
 
+.sectionA {
+  display: inline-block;
+  background-color: rgba(2, 108, 10, 0.37);
+  width: 100%;
+  padding-bottom: 100px;
+  text-align: center; }
+  .sectionA > .sectionAContent {
+    margin: 10%; }
+    .sectionA > .sectionAContent > .left {
+      width: 50%;
+      float: left; }
+      .sectionA > .sectionAContent > .left > .top {
+        background-color: rgba(201, 195, 195, 0.55);
+        width: 100%;
+        float: left;
+        height: 80%; }
+        .sectionA > .sectionAContent > .left > .top > img {
+          width: 70%; }
+      .sectionA > .sectionAContent > .left > .bottom {
+        background-color: blue;
+        width: 100%;
+        float: left;
+        height: 20%;
+        font-size: 40px; }
+    .sectionA > .sectionAContent > .right {
+      width: 50%;
+      float: left; }
+      .sectionA > .sectionAContent > .right > .top {
+        width: 100%;
+        float: left;
+        height: 50%;
+        font-size: 40px;
+        background-color: rgba(0, 128, 0, 0.38); }
+      .sectionA > .sectionAContent > .right > .bottom {
+        width: 100%;
+        float: left;
+        height: 50%;
+        font-size: 40px;
+        background-color: rgba(255, 255, 0, 0.37); }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--Seated, made 3/28/15-->
+<html lang="en">
+    <head>
+        <title>Seated</title>
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+		<script src="js/jquery.js"></script>
+		<script src="js/changeData.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico">
+    </head>
+    <body>
+		
+		<img class="background" src="images/background.svg">
+		<div class="page">
+			<div class="header">
+				        <div class="container-fluid">
+            <div class="row">
+            </div>
+        </div>
+					<div class="logo">
+						<img class="logoImg" src="images/logo.png">
+					</div>
+					<div class="name">
+						<a href="index.html">Seated</a>
+					</div>
+					<div class="link">
+						<a href="test.html">Try it!</a>
+					</div>
+			</div>
+
+			<div class="content">
+				<div class="sectionA">
+					<div class="sectionAContent">
+						<div class="left">
+							<div class="top">
+								<img id="changeImage" src="images/logoGray.png">
+							</div>
+							<div id="changeStatus" class="bottom">
+								No Weight Detected	
+							</div>
+						</div>
+						<div class="right">
+							<div class="top">
+								<img id="changeAngleVisual">
+								<div id="changeAngle">
+									Angle:
+									<div id="angle"></div>
+								</div>
+							</div>
+							<div id="changeTimer" class="bottom">
+								No Timer
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				
+			</div>
+		</div>
+		<script>
+            function httpGet()
+            {
+                var xmlHttp = null;
+
+                theUrl = "https://api.spark.io/v1/devices/54ff71066672524822431867/photocell?access_token=eef5a0cba3f7e74a20df3a6d9b49229ce8b54fc7";
+                xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "GET", theUrl, false );
+                xmlHttp.send( null );
+                //console.log(xmlHttp.responseText);
+                obj = JSON.parse(xmlHttp.responseText);
+                //document.getElementById("ph1").innerHTML = obj.result;
+				window.isActive = obj.result;
+				
+
+                theUrl = "https://api.spark.io/v1/devices/54ff71066672524822431867/photocell2?access_token=eef5a0cba3f7e74a20df3a6d9b49229ce8b54fc7";
+                xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "GET", theUrl, false );
+                xmlHttp.send( null );
+                //console.log(xmlHttp.responseText);
+                obj = JSON.parse(xmlHttp.responseText);
+                //document.getElementById("ph2").innerHTML = obj.result;
+				
+
+                theUrl = "http://api-m2x.att.com/v1/feeds/5b242c49c018520383b9589a6820e068/streams/tilt/values?limit=1";
+                xmlHttp = new XMLHttpRequest();
+                xmlHttp.open( "GET", theUrl, false );
+                xmlHttp.send( null );
+                console.log(xmlHttp.responseText);
+                obj = JSON.parse(xmlHttp.responseText);
+                document.getElementById("angle").innerHTML = obj.values[0].value;
+                return xmlHttp.responseText;
+            }
+        </script>
+    </body>
+</html>

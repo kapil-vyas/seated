@@ -149,3 +149,52 @@ body {
 	}
 	
 }
+
+.sectionA {
+	display: inline-block;
+	background-color: rgba(2, 108, 10, 0.37);
+	width: 100%;
+	padding-bottom: 100px;
+	text-align: center;
+	&>.sectionAContent{
+		margin: 10%;
+		&>.left{
+			width:50%;
+			float:left;
+			&>.top{
+				background-color: rgba(201, 195, 195, 0.55);
+				width: 100%;
+				float: left;
+				height: 80%;
+				&>img{
+					width: 70%;	
+				}
+			}
+			&>.bottom{
+				background-color: blue;
+				width: 100%;
+				float: left;
+				height: 20%;
+				font-size: 40px;
+			}	
+		}
+		&>.right{
+			width: 50%;
+			float: left;
+			&>.top{
+				width: 100%;
+				float: left;
+				height: 50%;
+				font-size: 40px;
+				background-color: rgba(0, 128, 0, 0.38);
+			}
+			&>.bottom{
+				width: 100%;
+				float: left;
+				height: 50%;
+				font-size: 40px;
+				background-color: rgba(255, 255, 0, 0.37);
+			}
+		}
+	}
+}
