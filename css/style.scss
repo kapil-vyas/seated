@@ -154,7 +154,7 @@ body {
 	display: inline-block;
 	background-color: rgba(2, 108, 10, 0.37);
 	width: 100%;
-	padding-bottom: 40px;
+	padding-bottom: 20px;
 	text-align: center;
 	&>.sectionAContent{
 		margin: 10%;
@@ -162,7 +162,7 @@ body {
 			width:50%;
 			float:left;
 			&>.top{
-				background-color: rgba(201, 195, 195, 0.55);
+				background-color: rgba(0, 31, 203, 0.28);
 				width: 100%;
 				float: left;
 				height: 80%;
@@ -171,7 +171,7 @@ body {
 				}
 			}
 			&>.bottom{
-				background-color: blue;
+				background-color: #ff0000;
 				width: 100%;
 				float: left;
 				height: 20%;
@@ -188,7 +188,7 @@ body {
 				font-size: 40px;
 				padding-top: 10%;
 				padding-bottom: 10%;
-				background-color: rgba(0, 128, 0, 0.38);
+				background-color: rgba(0, 185, 0, 0.38);
 			}
 			&>.bottom{
 				width: 100%;
@@ -197,8 +197,13 @@ body {
 				padding-top: 11%;
 				padding-bottom: 10.5%;
 				font-size: 40px;
-				background-color: rgba(255, 255, 0, 0.37);
+				background-color: rgba(255, 255, 255, 0.5);
 			}
 		}
 	}
+}
+.asdf{
+	color: white;
+	text-align: center;
+	background-color: rgba(109, 109, 109, 0.69);
 }
