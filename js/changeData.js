@@ -2,7 +2,7 @@ function loop(){
 	//chair color and status
 	if (isActive == 0){
 		$("#changeImage").attr("src", "images/logoGray.png");
-		$("#changeStatus").html("No Weight Detected");
+		$("#changeStatus").html("Nothing Detected");
 		$("#changeStatus").css("background-color", "#7c7c7c");
 		window.timeElapsed = 0;
 		window.time = Date.now();
@@ -11,7 +11,7 @@ function loop(){
 	
 	if (isActive == 1){
 		$("#changeImage").attr("src", "images/logo.png");
-		$("#changeStatus").html("Weight Detected");
+		$("#changeStatus").html("Sitting Detected");
 		$("#changeStatus").css("background-color", "green");
 		if (window.timeElapsed = 0){
 			window.time = Date.now();

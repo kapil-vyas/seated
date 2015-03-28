@@ -42,9 +42,9 @@
 						</div>
 						<div class="right">
 							<div class="top">
-								<img id="changeAngleVisual">
+								<div>Angle:</div>
 								<div id="changeAngle">
-									Angle:
+									
 									<div id="angle"></div>
 								</div>
 							</div>
@@ -87,7 +87,7 @@
                 xmlHttp = new XMLHttpRequest();
                 xmlHttp.open( "GET", theUrl, false );
                 xmlHttp.send( null );
-                console.log(xmlHttp.responseText);
+                //console.log(xmlHttp.responseText);
                 obj = JSON.parse(xmlHttp.responseText);
                 document.getElementById("angle").innerHTML = obj.values[0].value;
                 return xmlHttp.responseText;
