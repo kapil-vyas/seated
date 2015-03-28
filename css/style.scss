@@ -1,0 +1,151 @@
+a {
+	text-decoration: none;
+}
+
+html {
+	
+}
+
+body {
+	margin: 0px;
+	font-family: raleway;
+}
+
+.background{
+	position: fixed;
+	z-index: -1000;
+	overflow: hidden;
+}
+.header{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	height: 80px;
+	line-height: 90px;
+	background-color: white;
+	border-bottom: 3px solid #333333;
+	&>.logo{
+		margin-left: 30px;
+		margin-right: 20px;
+		float: left;
+		height: 100%;	
+		&>.logoImg{
+		height: 100%;
+		}
+	}
+	&>.name{
+		float: left;
+		color: black;
+		font-size: 50px;
+		a{
+			color: black;
+		}
+	}
+	&>.link{
+		float: right;	
+		margin-right: 40px;
+		&>a{
+			$colorGray: #969696;
+			font-size: 30px;
+			color: $colorGray;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-left: 30px;
+			padding-right: 30px;
+			border: 3px solid $colorGray;	
+			border-radius: 20px;
+			&:hover{
+				background-color: #ededed;
+				border: 3px solid #696868;
+				color: #696868;
+			}
+		}
+	}
+}
+.sectionOne {
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.37);
+	width: 100%;
+	padding-bottom: 50px;
+	&>.sectionOneContent{	
+		height: 100%;
+		padding-top: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		&>.sectionOneLeft img{
+			  width: 24%;
+			  float: left;
+			  margin-left: 13%;
+		}
+		&>.sectionOneRight {
+			width: 45%;
+			margin-left: 5%;
+			padding-top: 50px;
+			float: left;
+			&>.sectionOneRightTop{
+			font-size: 70px;
+				&>img{
+					width: 20%;	
+				}
+			}
+			&>.sectionOneRightBot{
+				font-size: 40px;
+				color: #646464;
+			}
+		}
+	}
+}
+.sectionTwo {
+	padding-bottom: 60px;
+	background-color: rgba(10, 0, 255, 0.24);
+	&>.sectionTwoContent{	
+		height: 100%;
+		padding-top: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		&>.Top{
+			color: black;
+			font-size: 40px;
+			text-align: center;
+		}
+		&>.list{
+			font-size: 20px;
+			color: white;
+			text-align: center;
+		}
+		&>.importImg{
+			img{
+				width: 75%;
+				margin-left: 12.5%;
+				margin-right: 12.5%;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				background-color: rgba(57, 46, 136, 0.46);
+				border-radius: 5%
+			}	
+		}
+		&>.link{
+			text-align: center;
+			margin-top: 40px;
+			&>a{
+				$colorWhite: white;
+				background-color: rgba(24, 3, 181, 0.38);
+				font-size: 30px;
+				color: $colorWhite;
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 30px;
+				padding-right: 30px;
+				border: 3px solid $colorWhite;	
+				border-radius: 20px;
+				&:hover{
+					background-color: rgba(168, 162, 211, 0.75);
+					border: 3px solid rgba(216, 216, 216, 0.75);
+					color: rgba(24, 3, 181, 0.75);
+				}
+			}
+		}
+		
+	}
+	
+}
