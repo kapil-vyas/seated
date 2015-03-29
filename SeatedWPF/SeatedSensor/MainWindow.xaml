@@ -1,0 +1,22 @@
+﻿<Window x:Class="SeatedSensor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Notification="clr-namespace:Mantin.Controls.Wpf.Notification;assembly=Mantin.Controls.Wpf.Notification"
+        Title="MainWindow" Height="369.403" Width="525">
+
+    <Grid Background="#FFD68F54">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="478*"/>
+        </Grid.ColumnDefinitions>
+
+        <Rectangle x:Name="Indicator" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="150" Margin="25,138,0,0" Stroke="Black" VerticalAlignment="Top" Width="468" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="txt1" HorizontalAlignment="Left" Margin="392.716,13,0,0" TextWrapping="Wrap" Text="Room Light" VerticalAlignment="Top" Height="16" Grid.Column="1"/>
+        <Rectangle x:Name="Indicator2" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="56" Margin="392.716,34,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="95" VerticalAlignment="Top" Width="99" Source="logo.png" Margin="0,13,0,0" Grid.Column="1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="108.716,34,0,0" TextWrapping="Wrap" Text="SEATED" VerticalAlignment="Top" Height="51" Width="214" FontSize="36" TextAlignment="Center" Grid.Column="1"/>
+        <Button Content="Multiple Seats" HorizontalAlignment="Left" Margin="25,293,0,0" VerticalAlignment="Top" Width="102" Click="Button_Click" Height="26" Grid.ColumnSpan="2"/>
+
+    </Grid>
+
+</Window>
